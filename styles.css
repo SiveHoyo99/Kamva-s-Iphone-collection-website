@@ -1,0 +1,211 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  background: url('iphone-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Soft overlay */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #6c63ff, #17a2b8);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Products */
+.products {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
+}
+
+/* Title */
+.card h3 {
+  margin: 1rem 0 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Price */
+.price {
+  font-weight: bold;
+  color: #6c63ff;
+  font-size: 1.3rem;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+/* HERO HEADER */
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('iphone-background.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Content inside header */
+.hero-content {
+  max-width: 700px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.tagline {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+.subtext {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Button */
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background: #6c63ff;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #574fd6;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero h1 {
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 3rem;
+}
