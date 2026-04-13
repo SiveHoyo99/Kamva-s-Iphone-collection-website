@@ -9,7 +9,7 @@ A responsive static website that is developed for marketing reasons for a growin
 
 ## Features
 -  Responsive design for all devices
--  Clean and modern Apple-inspired UI
+-  Clean and modern UI
 -  Fast-loading static pages
 
 ---
