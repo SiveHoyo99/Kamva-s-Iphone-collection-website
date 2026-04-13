@@ -3,7 +3,7 @@
 > **Live Demo:** [View Project Here](https://sivehoyo99.github.io/Kamva-s-Iphone-collection-website/)
 
 ## Overview
-A responsive static website inspired by Apple's iPhone product page. This project was built to practice modern web design techniques and replicate clean, professional UI layouts.
+A responsive static website that is developed for marketing reasons for a growing business "Kamva's Iphone Collection ". It displays Iphone products with prices and descriptions. An button redirecting to WhatsApp to order is included.
 
 ---
 
